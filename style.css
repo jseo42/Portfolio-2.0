@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;500&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background-color: #Fefefe;
+  font-family: 'Rubik', sans-serif;
+  scroll-behavior: smooth;
+
+}
+
+/* Heading + Nav */
+header {
+  z-index: 99;
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.4s;
+  padding: 40px 100px;
+}
+header.sticky {
+  padding: 10px 50px;
+  background-color: rgba(25, 25, 25, 0.9);
+}
+
+header .logo {
+  
+  font-size: 3em;
+  text-transform: uppercase;
+  transition: 0.5s;
+  color: #1b1b1b;
+  text-decoration: none;
+}
+
+header a {
+  transition: all 0.4s;
+}
+header a:hover {
+  transform: translateY(-5px);
+}
+
+header ul {
+  
+  display: flex;
+  justify-content: space-around;
+  gap: 1rem;
+}
+header ul li {
+  
+  list-style-type: none;
+  transition: all 0.5s;
+}
+
+header ul li a {
+  
+  text-decoration: none;
+  letter-spacing: 2px;
+  transform: 0.5s;
+  color: #1b1b1b;
+}
+header ul li:hover {
+  transform: translateY(-5px);
+}
+header.sticky ul li a {
+  color: #eee;
+}
+header.sticky .logo {
+  color: #eee;
+}
+/* Main */
+
+
+section {
+  min-height: 100vh;
+}
+
+
+.hidden {
+  
+  opacity: 0;
+  transition: all 1s;
+  filter: blur(10px);
+  transform: translateX(-100%);
+}
+
+.show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0%);
+}
+
+/* Home */
+
+#home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+#home #text a {
+  text-decoration: none;
+}
+
+
+.line {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.word {
+  color: #1b1b1b;
+  font-size: 5em;
+  font-weight: 300;
+  text-transform: uppercase;
+  transition: opacity 250ms ease;
+}
+
