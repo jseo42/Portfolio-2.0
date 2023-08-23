@@ -125,7 +125,7 @@ section {
 
 .hidden {
   opacity: 0;
-  transition: all 0.8s;
+  transition: all 1s;
   filter: blur(20px);
   transform: translateY(100%) ;
 }
@@ -145,26 +145,68 @@ section {
 }
 
 .about-container {
-  gap: ;
+  
+  padding: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .about-left {
-  padding-right: 10px;
-  border-right: 1.75px solid #1b1b1b;
+  padding-right: 20px;
+  border-right: 1px solid #1b1b1b;
+}
+.name {
+  letter-spacing: 10px;
+  border-bottom: 1px solid #1b1b1b;
+  font-size: 10em;
 }
 .about-right {
   padding-left: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
-.name p {
-  font-size: 9em;
+.tool-panel {
+  display: flex;
 }
-.position p {
+.about-right .tool-panel img {
+  height: 100px;
+  width: 100px;
+  padding: 5px;
+}
+.about-right .about-panel p.about-line{
+  font-size: 3em;
+}
+.about-right .about-panel p.about-me{
+  font-size: 1.5em;
+}
+
+.position {
   font-weight: 200;
-  font-size: 7em;
+  font-size: 6em;
 }
 
 
+.icon:nth-child(2) {
+  transition-delay: 100ms;
+}
+.icon:nth-child(3) {
+  transition-delay: 150ms;
+}
+.icon:nth-child(4) {
+  transition-delay: 200ms;
+}
+.icon:nth-child(5) {
+  transition-delay: 250ms;
+}
+.icon:nth-child(6) {
+  transition-delay: 300ms;
+}
+.icon:nth-child(7) {
+  transition-delay: 350ms;
+}
+
+
+.
 /* Work */ 
 
