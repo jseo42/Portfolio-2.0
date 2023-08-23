@@ -119,7 +119,7 @@ section {
   min-height: 100vh;
   font-family: 'IBM Plex Sans', sans-serif;
   font-weight: 300;
-  
+  padding: 50px;
 }
 
 
@@ -145,8 +145,7 @@ section {
 }
 
 .about-container {
-  
-  padding: 50px;
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -207,6 +206,24 @@ section {
 }
 
 
-.
-/* Work */ 
 
+/* Work */ 
+#work {
+  display: flex;
+  justify-content: center;
+}
+p.work-line {
+  text-transform: uppercase;
+  font-size: 4em;
+  font-weight: 300;
+}
+
+.work-grid {
+  
+  display: grid;
+  gap: 20px;
+}
+
+.grid-item {
+  
+}
