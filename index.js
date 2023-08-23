@@ -12,3 +12,9 @@ const divWatch = new IntersectionObserver((entries) => {
 const hiddenEl = document.querySelectorAll('.hidden');
 hiddenEl.forEach((el) => divWatch.observe(el));
 
+const text = document.querySelector('.logo-text p');
+text.innerHTML = text.innerHTML.split("").map(
+  (char, i) => 
+  `<span style="transform:rotate(${i * 8 }deg)">${char}</span>`
+).join('')
+
