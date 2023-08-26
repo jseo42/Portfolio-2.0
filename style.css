@@ -25,6 +25,9 @@ body {
   scroll-behavior: smooth;
 }
 
+a {
+  text-decoration: none;
+}
 
 header {
   padding: 10px;
@@ -171,7 +174,8 @@ section {
   gap: 20px;
   display: flex;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
+  border-bottom: 1px solid #1b1b1b;
 }
 .about-left {
   display: flex;
@@ -226,15 +230,45 @@ section {
 }
 p.work-line {
   text-transform: uppercase;
-  font-size: 2em;
-  font-weight: 200;
+  font-size: 5em;
+  font-weight: 300;
 }
 
 .work-grid {
   display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 20px;
 }
+.work-grid img {
+  border-radius: 10px;
+  width: 400px;
+  height: 400px;
+}
+.work-grid a img {
+  height: 24px;
+  width: 24px;
+}
 
+.project {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.project-links {
+  
+  margin-top: 5px;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly; 
+}
+.project-links a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  color: #1b1b1b;
+}
 @media (max-width: 480px) {
   body {
     display: flex;
@@ -306,4 +340,18 @@ p.work-line {
   .nav-links li:nth-child(4) {
     transition-delay: 200ms;
   }
+
+  .about-container {
+    border-style: none;
+  }
+
+  .work-grid {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  p.work-line {
+  font-size: 2em;
+}
 }

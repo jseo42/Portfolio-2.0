@@ -26,10 +26,3 @@ toggleBtn.addEventListener('click', () => {
   
 
 
-function createProjects() {
-  const projectList = [
-    {name:'Calculator', image:'', github:'https://github.com/jseo42/Calculator', live:'https://htmlpreview.github.io/?https://github.com/jseo42/Calculator/blob/main/index.html'},
-    {name:'Pokedex', image:'', github:'', live:''},
-    {name:'Library App', image:'', github:'', live:''},
-  ]
-}
