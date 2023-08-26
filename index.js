@@ -18,6 +18,14 @@ text.innerHTML = text.innerHTML.split("").map(
   `<span style="transform:rotate(${i * 8 }deg)">${char}</span>`
 ).join('')
 
+const toggleBtn = document.querySelector('.toggle-btn');
+const navbarLinks = document.querySelector('.nav-links');
+toggleBtn.addEventListener('click', () => {
+  navbarLinks.classList.toggle('active')
+});
+  
+
+
 function createProjects() {
   const projectList = [
     {name:'Calculator', image:'', github:'https://github.com/jseo42/Calculator', live:'https://htmlpreview.github.io/?https://github.com/jseo42/Calculator/blob/main/index.html'},
