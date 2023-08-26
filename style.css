@@ -226,7 +226,9 @@ section {
 
 #work {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: ;
 }
 p.work-line {
   text-transform: uppercase;
@@ -236,13 +238,17 @@ p.work-line {
 
 .work-grid {
   display: grid;
+  width: 100%;
   grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
+  align-items: start;
+  justify-content: space-between;
+  justify-items: center;
+
 }
 .work-grid img {
   border-radius: 10px;
   width: 400px;
-  height: 400px;
+  height: 500px;
 }
 .work-grid a img {
   height: 24px;
@@ -254,21 +260,35 @@ p.work-line {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  max-width: 500px;
+  max-height: 700px;
 }
 .project-links {
-  
   margin-top: 5px;
   width: 100%;
   display: flex;
   justify-content: space-evenly; 
 }
 .project-links a {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 10px;
   color: #1b1b1b;
+  border: 1px solid #1b1b1b;
+  padding: 10px 20px;
+  transition: all 0.5s;
+  font-weight: 300;
+  border-radius: 20px;
 }
+
+.project-links a:hover {
+  background-color: #1b1b1b;
+  color: #Fefefe;
+  
+}
+
 @media (max-width: 480px) {
   body {
     display: flex;
@@ -348,10 +368,20 @@ p.work-line {
   .work-grid {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    gap: 1rem;
+    
+
   }
 
   p.work-line {
   font-size: 2em;
-}
+  }
+  .work-grid img {
+    width: 250px;
+    height: 300px;
+  }
+
+  .project-links a {
+    padding: 5px 10px;
+  }
 }

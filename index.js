@@ -5,7 +5,12 @@ window.addEventListener('scroll', function() {
 
 const divWatch = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
-    entry.target.classList.toggle('show', entry.isIntersecting);
+    if (entry.isIntersecting) {
+      entry.target.classList.add('show');
+    } else {
+      entry.target.classList.remove('show')
+    }
+    
   })
 });
 
