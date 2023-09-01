@@ -9,18 +9,18 @@
 <body>
   </div>
   <header>
-    <div class="circle hidden">
+    <div class="circle">
       <a href="#" class="logo">.JS</a>
       <div class="logo-text">
-        <p>— JAY SEO — FRONT END — CREATIVE — MARKETING </p>
+        <p>— JAY SEO — FRONT END — JAVASCRIPT — GG  </p>
       </div>
     </div>
     <nav>
-      <ul class="nav-links hidden">
-        <li class="hidden"><a href="#about">ABOUT</a></li>
-        <li class="hidden"><a href="#work">MY WORKS</a></li>
-        <li class="hidden"><a href="#plog">ALBUM</a></li>
-        <li class="hidden"><a href="#contact">CONTACT</a></li>
+      <ul class="nav-links">
+        <li><a href="#home">HOME</a></li>
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#work">MY WORKS</a></li>
+        <li><a href="#contact">CONTACT</a></li>
       </ul>
     </nav>  
 
@@ -31,43 +31,80 @@
     <span class="bar"></span>
   </a>
   <main></main>
-    <section class="hidden" id="about">
-      <div class="about-container">
-        <div class="about-left">
-          <div class="name">
-            <p>Jay Seo</p>
-          </div>
+    <section id="home">
+      <div class="home-container">
+        <div class="home-left">
+          <p class="name">Jay Seo</p>
           <div class="position">
             <p>WEB</p>
             <p>DEVELOPER</p>
           </div>
         </div>
-        <div class="about-right">
-          <div class="about-panel">
-            <p class="about-line">Hello There!</p>
-            <p class="about-me">
-              <i>I'm Jay Seo, a self motivated web developer. </i><br />
-            </p>
-          </div>
-          <div class="tool-panel">
-            <img src="./media/images/SVG/html5.svg" alt="HTML" class="icon hidden">
-            <img src="./media/images/SVG/css.svg" alt="HTML" class="icon hidden">
-            <img src="./media/images/SVG/javascript.svg" alt="HTML" class="icon hidden">
-            <img src="./media/images/SVG/react.svg" alt="HTML" class="icon hidden">
-            <img src="./media/images/SVG/git.svg" alt="HTML" class="icon hidden">
-            <img src="./media/images/SVG/adobe-premiere-pro.svg" alt="HTML" class="icon hidden">
-            <img src="./media/images/SVG/adobe-photoshop.svg" alt="HTML" class="icon hidden">
+        <div class="home-right">
+          <div class="home-panel">
+            <p class="home-line">Hello There!</p><br/>
+            <p class="home-me">
+              <i>I'm a self-motivated front-end dev 
+                with a passion for aesthetics and functionality. <br />
+                Feel free to check out my portfolio!
+              </i>
+          </p>
           </div>
         </div>
       </div>
+      <a href="#about" class="arrow">
+        <span></span>
+        <span></span>
+        <span></span>
+      </a>
+    </section>
+    <section id="about">
+      <div class="section-text">
+        <p class="section-line">About</p>
+      </div>
+      <div class="about-me">
+        <p class="about-description">
+          My journey into the world of programming was a bit unconventional.<br />
+          <br>
+          <i>Influenced by my childhood, I had an innate curiousity for all things technology. 
+            Modding my Nintendo console systems, rooting my android device or always being hands-on with gadgets
+            were some of the experiences that helped me develop the skills as an aspiring full stack engineer.</i><br/ >
+          <br />
+          Coming from a background in creative advertising and digital marketing, I continue to turn ideas into captivating experiences 
+          and bring a unique prespective to web development.<br/>
+          <br />
+          Today I'm always learning something new! Join me on this exciting journey of both function and form. 
+          
+
+        </p>
+      </div>
+      <div class="tech-stack hidden">
+        <p class="tech-line">I'm Proficient In:</p>
+        <div class="tool-panel">
+          <img src="./media/images/SVG/html5.svg" alt="HTML">
+          <img src="./media/images/SVG/css.svg" alt="CSS">
+          <img src="./media/images/SVG/javascript.svg" alt="JAVASCRPT">
+          <img src="./media/images/SVG/git.svg" alt="GIT">
+          <img src="./media/images/SVG/adobe-premiere-pro.svg" alt="ADOBE PREMIERE">
+          <img src="./media/images/SVG/adobe-photoshop.svg" alt="ADOBE PHOTOSHOP">
+          <img src="./media/images/SVG/adobe-lightroom.svg" alt="ADOBE LIGHTROOM">
+        </div>
+        <p class="tech-line">Currently Learning:</p>
+        <div class="tool-panel">
+          <img src="./media/images/SVG/react.svg" alt="REACT">
+          <img src="./media/images/SVG/node-js.svg" alt="NODE">
+          <img src="./media/images/SVG/mongodb.svg" alt="MONGODB">
+        </div>
+      </div>
+      
     </section>
     <section id="work">
-      <div class="work-text">
-        <p class="work-line">The</p>
-        <p class="work-line">Works</p>
+      <div class="section-text">
+        <p class="section-line">Projects</p>
       </div>
       <div class="work-grid" id="projects">
         <div class="project">
+          <p class="project-name">Calculator App</p>
           <img src="./media/images/PNG/Calculator.png" alt="Calculator App">
           <div class="project-links">
             <a href="https://htmlpreview.github.io/?https://github.com/jseo42/Calculator/blob/main/index.html" class="github-link">
@@ -79,6 +116,7 @@
           </div>
         </div>
         <div class="project">
+          <p class="project-name">Library App</p>
           <img src="./media/images/PNG/Library.png" alt="Calculator App">
           <div class="project-links">
             <a href="https://htmlpreview.github.io/?https://github.com/jseo42/Library-App/blob/main/index.html" class="github-link">
@@ -90,6 +128,7 @@
           </div>
         </div>
         <div class="project">
+          <p class="project-name">Gen 4 Pokédex</p>
           <img src="" alt="POKEDEX APP">
           <div class="project-links">
             <a href="" class="github-link">
@@ -102,8 +141,7 @@
         </div>
       </div>
     </section>
-    <section class="hidden" id="plog">Content</section>
-    <section class="hidden" id="contact">Content</section>
+    <section id="contact">Content</section>
 
   </main>
 
