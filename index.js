@@ -16,3 +16,15 @@ toggleBtn.addEventListener('click', () => {
   navbarLinks.classList.toggle('active')
 });
   
+const links = document.querySelectorAll('#medium-link');
+const divs = document.querySelectorAll('.animate-div');
+
+links.forEach((link, index) => {
+  link.addEventListener('mouseenter', () => {
+    divs[index].style.transform = 'translateX(30%) rotate(-15deg)';
+
+  });
+  link.addEventListener('mouseleave', () => {
+    divs[index].style.transform = 'translateX(100%) rotate(0)'
+  });
+});

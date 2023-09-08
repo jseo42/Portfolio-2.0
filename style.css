@@ -347,6 +347,18 @@ p.section-line {
   transition: all 0.5s;
   font-weight: 300;
   border-radius: 20px;
+  text-decoration: none;
+}
+a#medium-link {
+  transition: 0.3s;
+  
+}
+a#medium-link:hover {
+  color: lightgray;
+}
+
+.contact-hero {
+  position: relative;
 }
 
 .project-links a:hover {
@@ -354,17 +366,25 @@ p.section-line {
   color: #Fefefe;
   
 }
-.contact-container {
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
 
+.contact-hero {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  align-items: center;
+  padding: 3rem;
+  width: 100vw;
+  
+ 
 }
+
+
 .medium {
   display: flex;
   flex-direction: column;
-  gap: 4rem;
+  gap: 2rem;
+  font-weight: bold;
+ 
 }
 .medium a {
   text-decoration: none;
@@ -374,19 +394,25 @@ p.section-line {
   justify-content: center;
   gap: 1rem;
 }
-.medium a img {
-  width: 48px;
-  height: 48px;
+.animate-div img {
+  border: 1px solid #1b1b1b;
 }
-.medium-div {
+
+.animate-div {
   width: 300px;
   height: 400px;
-  border: 1px solid #1b1b1b;
-  position: absolute;
-  right: 1rem;
-
   transition: all 0.3s;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translateX(100%);
+  
 }
+.animate-div:nth-child(1){
+  filter: blur(3px);
+  
+}
+
 @media (max-width: 480px) {
   body {
     display: flex;
