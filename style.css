@@ -369,15 +369,12 @@ a#medium-link:hover {
 
 .contact-hero {
   display: flex;
-  justify-content: space-evenly;
-  width: 100%;
+  justify-content: center;
   align-items: center;
-  padding: 3rem;
   width: 100vw;
   
  
 }
-
 
 .medium {
   display: flex;
@@ -393,14 +390,17 @@ a#medium-link:hover {
   align-items: center;
   justify-content: center;
   gap: 1rem;
+  font-size: 1.5rem;
 }
 .animate-div img {
+  width: auto;
+  height: 500px;
   border: 1px solid #1b1b1b;
 }
 
 .animate-div {
-  width: 300px;
-  height: 400px;
+  width: auto;
+  height: 500px;
   transition: all 0.3s;
   position: absolute;
   top: 0;
@@ -409,7 +409,7 @@ a#medium-link:hover {
   
 }
 .animate-div:nth-child(1){
-  filter: blur(3px);
+  filter: blur(1px);
   
 }
 
